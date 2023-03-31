@@ -6,13 +6,13 @@
     }
 
     .blocks{
-        background-color: #D9B5B5;
+        background-color: #D9D9D9;
         width: 772px;
         height: 739px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        border-radius: 10px;
     }
 
     .block{
@@ -22,7 +22,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top:30px;
+        margin-top:50px;
     }
 
     .block > p {
@@ -30,10 +30,10 @@
     }
 
     button{
-        background-color: grey;
+        background-color: white;
         width: 420px;
         height: 50px;
-        color: pink;
+        color: grey;
         font-size: 25px;
         border-radius: 10px;
     }
@@ -46,6 +46,10 @@
         font-size: 20px;
     }
 
+    h2{
+        text-align: center;
+    }
+
 </style>
 
 <h2>Авторизация</h2>
@@ -56,7 +60,7 @@
 if (!app()->auth::check()):
     ?>
     <form method="post">
-        <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
+
         <div class="center">
             <div class="blocks">
                 <div class="block">
@@ -64,9 +68,6 @@ if (!app()->auth::check()):
                 </div>
                 <div class="block">
                     <input type="text" name="LastName"  placeholder="имя">
-                </div>
-                <div class="block">
-                    <input type="text" name="login"  placeholder="login">
                 </div>
                 <div class="block">
                     <input type="password" name="password"  placeholder="password">

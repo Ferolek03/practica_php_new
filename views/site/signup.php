@@ -1,10 +1,9 @@
 
-<h2>Регистрация нового Абонента</h2>
+<h2>Создание профиля пациента</h2>
 
 <h3><?= $message ?? ''; ?></h3>
 <div class="center">
     <form method="post">
-        <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
         <div class="blocks">
             <div class="block">
                 <input type="text" name="FirstName"required placeholder="Фамилия">
@@ -22,28 +21,28 @@
                 <input type="text"name="Room_ID" required placeholder="Помещение">
             </div>
 
-            <div class="block">
-                <input type="text"name="login" required placeholder="login">
-            </div>
-            <div class="block">
-                <input type="password"name="password" required placeholder="password">
-            </div>
-
-            <div class="block">
-                <select name="id_role" id="id_role">
-                    <option value="1">Администратор</option>
-                    <option value="2">Абонент</option>
 
 
-                </select>
-            </div>
-            <div class="block">
-                <button>REGISTER</button>
+            <div class="block_">
+                <button>CБРОС</button>
+                <button>РЕГИСТРАЦИЯ</button>
             </div>
         </div>
     </form>
 </div>
 <style>
+    .block_{
+        display: flex;
+        background-color: #D9B5B5;
+        width: 420px;
+        margin: 50px;
+        border-radius: 30px;
+    }
+
+    h2{
+        text-align: center;
+    }
+
     .center{
         margin-top: 50px;
         display: flex;

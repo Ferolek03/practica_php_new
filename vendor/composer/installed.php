@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'ferolek03/practica_php',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '1987d0383b5e2f25ab70633101540a07e4db5c22',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'ferolek03/practica_php' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '1987d0383b5e2f25ab70633101540a07e4db5c22',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

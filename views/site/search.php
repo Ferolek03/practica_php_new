@@ -12,7 +12,6 @@ $connect = mysqli_connect("localhost", "root", "", "mvc") or die("Error");
 
 <body>
 <form method="post">
-    <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
     <input type="text" name="search" class="search"><input type="submit" name="submit" value="поиск">
 </form>
 <hr>

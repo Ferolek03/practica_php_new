@@ -14,7 +14,7 @@
         .header{
             margin-top: -20px;
             height: 100px;
-            background-color: #B7F0B6;
+            background-color: #64C7BB;
         }
         .nav{
             display: flex;
@@ -33,12 +33,12 @@
         }
         .link >a {
             text-decoration: none;
-            color: #000;
+            color: black;
             padding: 20px;
             font-size: 24px;
         }
         .link >a:hover{
-            color: pink;
+            color: #D9D9D9;
         }
         .center{
             margin-top: 100px;
@@ -56,14 +56,14 @@
 <div class="header">
     <div class="nav">
         <div class="logo">
-            <a href="<?= app()->route->getUrl('/hello')?>">Телефонный узел связи ТОМСК</a>
+            <a href="<?= app()->route->getUrl('/hello')?>">Учет пациентов</a>
         </div>
         <div class="link">
             <?php
             if (!app()->auth::check()):
                 ?>
-                <a href="<?= app()->route->getUrl('/signup')?>">SIGN UP</a>
-                <a href="<?= app()->route->getUrl('/login')?>">LOGIN</a>
+                <a href="<?= app()->route->getUrl('/signup')?>">Регистрация</a>
+                <a href="<?= app()->route->getUrl('/login')?>">Вход</a>
 
             <?php
             else:
